@@ -1,5 +1,5 @@
 require_relative 'config/environment'
-require 'math'
+
 class App < Sinatra::Base
   
   get '/reversename/:name' do
