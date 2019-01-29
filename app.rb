@@ -1,5 +1,5 @@
 require_relative 'config/environment'
-
+require 'math'
 class App < Sinatra::Base
   
   get '/reversename/:name' do
@@ -7,8 +7,8 @@ class App < Sinatra::Base
   end
 
   get '/square/:number' do
-    @num = params[:number].to_i
-    "#{@num*@num}"
+    num = params[:number].to_i
+    "#{num*num}"
   end
 
   get '/say/:number/:phrase' do
